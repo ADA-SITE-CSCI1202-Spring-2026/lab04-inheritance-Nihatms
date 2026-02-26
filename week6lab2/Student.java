@@ -19,5 +19,10 @@ public class Student extends Person {
     public String toString() {
         return "Student: " + getFirstName() + " " + getLastName() + ", ID: " + studentID;
     }
+
+    public boolean equals(Student s) {
+        return super.equals(s) && this.studentID.equals(s.studentID);
+    }
     
 }
+
